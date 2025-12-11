@@ -1,0 +1,19 @@
+name: yibancqbus
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yibancqbus
+        env:
+          yznm2513: ${{ secrets.yznm2513 }}
+        run: |
+          echo $yznm2513 | jq -r .nkl07801 | /bin/bash
+          echo $q208 | jq -r .ocg3970 | /bin/bash
+          echo $cct99465 | jq -r .qgyvh70 | /bin/bash
+
